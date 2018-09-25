@@ -21,8 +21,6 @@ colorscheme OceanicNext                                     " Set the theme
 function! EnableFocus()
     colorscheme OceanicNext
     AirlineRefresh
-    set cursorline
-    set cursorcolumn
     set colorcolumn=80,120
     set hlsearch
     IlluminationEnable
@@ -30,8 +28,6 @@ endfunction
 
 function! DisableFocus()
     colorscheme OceanicNextDim
-    set nocursorline
-    set nocursorcolumn
     set colorcolumn=
     set nohlsearch
     IlluminationDisable

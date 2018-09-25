@@ -17,8 +17,6 @@ set guioptions-=L                                            " Turn off GUI left
 set winaltkeys=no                                            " Turn off alt shortcuts
 set laststatus=2                                             " Always show status bar
 set nowrap                                                   " Disable line wrapping
-set cursorline                                               " Show a horizontal line
-set cursorcolumn                                             " Show a vertical line
 set clipboard+=unnamedplus                                   " Use the system keyboard
 set noshowmode                                               " Echodoc compatibility
 set hidden                                                   " For LSP server

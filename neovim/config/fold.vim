@@ -41,6 +41,7 @@ autocmd FileType css,scss,json setlocal foldmethod=marker
 autocmd FileType css,scss,json setlocal foldmarker={,}
 
 autocmd FileType coffee setlocal foldmethod=indent
+autocmd FileType python setlocal foldmethod=indent
 autocmd FileType xml setlocal foldmethod=syntax
 
 autocmd FileType html setlocal foldmethod=expr
