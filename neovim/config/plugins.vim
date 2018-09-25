@@ -8,6 +8,10 @@ call dein#begin(expand('~/.config/nvim'))
 
 call dein#add('Shougo/dein.vim')
 
+" Extend the installation timeout to allow time for markdown composer build to
+" complete
+let g:dein#install_process_timeout=300
+
 " Editor
 call dein#add('terryma/vim-multiple-cursors')
 call dein#add('tpope/vim-eunuch')
