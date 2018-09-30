@@ -1,0 +1,5 @@
+[user]
+	name = Scott Bambrick
+	email = scott.bambrick@gmail.com
+[core]
+	editor = nvim
