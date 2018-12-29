@@ -30,6 +30,7 @@ let g:deoplete#sources.c       = ['LanguageClient']
 let g:deoplete#sources.cpp     = ['LanguageClient']
 let g:deoplete#sources.python  = ['LanguageClient']
 let g:deoplete#sources.python3 = ['LanguageClient']
+let g:deoplete#sources.rust    = ['LanguageClient']
 let g:deoplete#sources.vim     = ['vim']
 
 " Disable autocomplete in comments and strings
@@ -48,6 +49,7 @@ let g:LanguageClient_serverCommands = {
             \ 'cpp': ['cquery', '--log-file=/tmp/cq.log'],
             \ 'c': ['cquery', '--log-file=/tmp/cq.log'],
             \ 'go': ['go-langserver', '-gocodecompletion'],
+            \ 'rust': ['rustup', 'run', 'stable', 'rls'],
             \ 'python': ['pyls'],
             \ }
 

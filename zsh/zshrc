@@ -7,7 +7,7 @@ plugins=(git gitfast gulp history-substring-search vagrant gradle)
 
 # User configuration
 export GOPATH=$HOME/go
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH=$PATH:"/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=$PATH:$(go env GOPATH)/bin
 
 source $ZSH/oh-my-zsh.sh
