@@ -28,9 +28,7 @@ call dein#add('sjl/vitality.vim')
 call dein#add('RRethy/vim-illuminate')
 
 " Language
-call dein#add('Shougo/deoplete.nvim')
-call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
-call dein#add('Shougo/echodoc.vim')
+call dein#add('neoclide/coc.nvim', {'merge':0, 'build': './install.sh nightly'})
 call dein#add('sheerun/vim-polyglot')
 call dein#add('fatih/vim-go')
 

@@ -11,8 +11,8 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'  " Only show filename
 let g:airline_powerline_fonts = 0                           " Disable fancy fonts
 let g:airline_theme ='oceanicnext'                          " Match the theme
 
-" OceanicNext configuration
-colorscheme OceanicNext                                     " Set the theme
+colorscheme OceanicNext
+set cursorline                                              " Enable line highlighting
 
 " Enable and disable syntax highlighting and window color whenever the window
 " gains or loses focus. The GUI foreground colors are taken from the OceanicNext
@@ -28,6 +28,7 @@ endfunction
 
 function! DisableFocus()
     colorscheme OceanicNextDim
+    AirlineRefresh
     set colorcolumn=
     set nohlsearch
     IlluminationDisable

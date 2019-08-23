@@ -1,11 +1,18 @@
 
 " Autocomplete
-nnoremap <silent> gh   :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd   :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> gr   :call LanguageClient#textDocument_references()<CR>
-nnoremap <silent> gs   :call LanguageClient#textDocument_documentSymbol()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gh :call <SID>show_documentation()<CR>
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gs <Plug>(coc-type-definition)
+nmap <silent> <F2> <Plug>(coc-rename)
 
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 " Search
 nnoremap <C-p> :<C-u>Denite file_rec<CR>
 nnoremap <C-w> :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
