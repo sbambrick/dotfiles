@@ -13,7 +13,8 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
 " Search
-nnoremap <C-p> :<C-u>Denite file_rec<CR>
-nnoremap <C-w> :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
-nnoremap <C-f> :<C-u>Denite grep:. -mode=normal<CR>
+nnoremap <C-p> :<C-u>Denite file/rec<CR>
+nnoremap <C-w> :<C-u>DeniteCursorWord grep:. <CR>
+nnoremap <C-f> :<C-u>Denite grep:. <CR>

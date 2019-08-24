@@ -20,3 +20,6 @@ set completeopt+=menu,menuone,noinsert,noselect
 " Close split pane if visible when leaving insert mode
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
+" Disable markdown concealing
+let g:vim_markdown_conceal_code_blocks = 0
+let g:vim_markdown_conceal = 0

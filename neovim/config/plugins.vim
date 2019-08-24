@@ -27,18 +27,16 @@ call dein#add('amerlyq/vim-focus-autocmd')
 call dein#add('sjl/vitality.vim')
 call dein#add('RRethy/vim-illuminate')
 
-" Language
-call dein#add('neoclide/coc.nvim', {'merge':0, 'build': './install.sh nightly'})
-call dein#add('sheerun/vim-polyglot')
-call dein#add('fatih/vim-go')
-
 " Markdown
 call dein#add('tpope/vim-markdown', {'on_ft': 'markdown'})
 call dein#add('dhruvasagar/vim-table-mode')
 call dein#add('nelstrom/vim-markdown-folding', {'on_ft': 'markdown'})
-call dein#add('rhysd/vim-grammarous')
-call dein#add('junegunn/goyo.vim')
 call dein#add('euclio/vim-markdown-composer', {'build': 'cargo build --release'})
+
+" Language
+call dein#add('neoclide/coc.nvim', {'merge':0, 'build': './install.sh nightly'})
+call dein#add('sheerun/vim-polyglot')
+call dein#add('fatih/vim-go')
 
 " Search
 call dein#add('Shougo/denite.nvim')
