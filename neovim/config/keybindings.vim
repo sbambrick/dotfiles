@@ -1,9 +1,9 @@
 
 " Autocomplete
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gh :call <SID>show_documentation()<CR>
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gs <Plug>(coc-type-definition)
+nmap <silent> gd   <Plug>(coc-definition)
+nmap <silent> gh   :call <SID>show_documentation()<CR>
+nmap <silent> gr   <Plug>(coc-references)
+nmap <silent> gs   <Plug>(coc-type-definition)
 nmap <silent> <F2> <Plug>(coc-rename)
 
 function! s:show_documentation()
@@ -15,6 +15,4 @@ function! s:show_documentation()
 endfunction
 
 " Search
-nnoremap <C-p> :<C-u>Denite file/rec<CR>
-nnoremap <C-w> :<C-u>DeniteCursorWord grep:. <CR>
-nnoremap <C-f> :<C-u>Denite grep:. <CR>
+nnoremap <C-p> :FuzzyOpen <CR>

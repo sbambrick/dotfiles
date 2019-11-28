@@ -39,7 +39,7 @@ call dein#add('sheerun/vim-polyglot')
 call dein#add('fatih/vim-go')
 
 " Search
-call dein#add('Shougo/denite.nvim')
+call dein#add('cloudhead/neovim-fuzzy')
 
 " Fold
 call dein#add('Konfekt/FastFold')
