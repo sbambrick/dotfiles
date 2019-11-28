@@ -11,6 +11,11 @@ if ! [ -x "$(command -v rg)" ]; then
     exit 1
 fi
 
+if ! [ -x "$(command -v fzy)" ]; then
+    echo "fzy not found on path, exiting" >&2
+    exit 1
+fi
+
 if ! [ -x "$(command -v cargo)" ]; then
     echo "cargo not found on path, exiting" >&2
     exit 1
