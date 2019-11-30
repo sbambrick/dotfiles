@@ -8,4 +8,5 @@ if [ -L "${HOME}/.tmux.conf" ] || [ -e "${HOME}/.tmux.conf" ]; then
     mv "${HOME}/.tmux.conf" "${HOME}/.tmux.conf.backup"
 fi
 ln -s "${SCRIPT_DIR}/tmux.conf" "${HOME}/.tmux.conf"
+ln -s "${SCRIPT_DIR}/tmux-yank.sh" "${HOME}/.tmux-yank.sh"
 
