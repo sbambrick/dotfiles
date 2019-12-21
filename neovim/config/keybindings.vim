@@ -16,3 +16,5 @@ endfunction
 
 " Search
 nnoremap <C-p> :FuzzyOpen <CR>
+nnoremap <C-w> :FuzzyGrep <C-R><C-W><CR>
+nnoremap <C-f> :FuzzyGrep <CR>
