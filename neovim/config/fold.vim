@@ -41,8 +41,11 @@ autocmd FileType css,scss,json setlocal foldmethod=marker
 autocmd FileType css,scss,json setlocal foldmarker={,}
 
 autocmd FileType coffee setlocal foldmethod=indent
+autocmd FileType c      setlocal foldmethod=syntax
+autocmd FileType cpp    setlocal foldmethod=syntax
 autocmd FileType python setlocal foldmethod=indent
-autocmd FileType xml setlocal foldmethod=syntax
+autocmd FileType rust   setlocal foldmethod=syntax
+autocmd FileType xml    setlocal foldmethod=syntax
 
 autocmd FileType html setlocal foldmethod=expr
 autocmd FileType html setlocal foldexpr=HTMLFolds()
@@ -51,4 +54,3 @@ autocmd FileType gitcommit setlocal foldlevel=99
 
 autocmd FileType vim setlocal foldmethod=marker
 autocmd FileType vim setlocal foldlevel=0
-
