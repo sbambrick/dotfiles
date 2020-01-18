@@ -3,6 +3,7 @@
 nmap <silent> gd   <Plug>(coc-definition)
 nmap <silent> gh   :call <SID>show_documentation()<CR>
 nmap <silent> gr   <Plug>(coc-references)
+nmap <silent> gi   <Plug>(coc-implementation)
 nmap <silent> gs   <Plug>(coc-type-definition)
 nmap <silent> <F2> <Plug>(coc-rename)
 
