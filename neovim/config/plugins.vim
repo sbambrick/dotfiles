@@ -34,9 +34,12 @@ call dein#add('nelstrom/vim-markdown-folding', {'on_ft': 'markdown'})
 call dein#add('euclio/vim-markdown-composer', {'build': 'cargo build --release'})
 
 " Language
-call dein#add('neoclide/coc.nvim', {'merge':0, 'build': './install.sh nightly'})
+call dein#add('Shougo/deoplete.nvim')
+call dein#add('Shougo/deoplete-lsp')
+call dein#add('neovim/nvim-lsp')
+call dein#add('roxma/nvim-yarp')
+call dein#add('roxma/vim-hug-neovim-rpc')
 call dein#add('sheerun/vim-polyglot')
-call dein#add('fatih/vim-go')
 
 " Search
 call dein#add('cloudhead/neovim-fuzzy')

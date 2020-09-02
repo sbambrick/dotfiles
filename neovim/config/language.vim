@@ -1,17 +1,22 @@
 " Vim/Neovim configuration for language packs and autocompletion.
-"
-" Required plugins:
-"   * neoclide/coc.nvim
-"
-" Recommended plugins:
-"   * sheerun/vim-polyglot - Language pack for 100s of languages
-"   * fatih/vim-go - Go language pack
-"
-" Required external tools:
-"   * cquery - Language server for C/Cpp
-"   * go-langserver - Language server for go
-"   * pyls - Language server for python
-"
+lua << END
+    require'nvim_lsp'.pyls.setup{}
+    require'nvim_lsp'.ccls.setup{}
+    require'nvim_lsp'.rust_analyzer.setup{}
+END
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('smart_case', v:true)
+call deoplete#custom#option('auto_complete_delay', 500)
+
+" Disable/Enable autocomplete when using multiple cursors
+function g:Multiple_cursors_before()
+    call deoplete#custom#buffer_option('auto_complete', v:false)
+endfunction
+function g:Multiple_cursors_after()
+    call deoplete#custom#buffer_option('auto_complete', v:true)
+endfunction
 
 " Completion menu
 set completeopt-=preview
