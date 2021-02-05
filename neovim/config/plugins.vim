@@ -36,7 +36,8 @@ call dein#add('euclio/vim-markdown-composer', {'build': 'cargo build --release'}
 " Language
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/deoplete-lsp')
-call dein#add('neovim/nvim-lsp')
+call dein#add('neovim/nvim-lspconfig')
+call dein#add('nvim-lua/completion-nvim')
 call dein#add('roxma/nvim-yarp')
 call dein#add('roxma/vim-hug-neovim-rpc')
 call dein#add('sheerun/vim-polyglot')

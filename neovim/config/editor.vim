@@ -27,6 +27,7 @@ set list                                                     " Show whitespace
 set listchars=tab:‣\ ,trail:·                                " Tweak whitespace visualization
 set signcolumn=yes                                           " Always show lint column
 set colorcolumn=80,120                                       " Show columnhighlights
+set updatetime=1000
 syntax on
 
 " Makefile tab

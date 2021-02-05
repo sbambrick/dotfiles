@@ -1,8 +1,8 @@
 " Vim/Neovim configuration for language packs and autocompletion.
 lua << END
-    require'nvim_lsp'.pyls.setup{}
-    require'nvim_lsp'.ccls.setup{}
-    require'nvim_lsp'.rust_analyzer.setup{}
+    require'lspconfig'.pyls.setup{on_attach = on_attach}
+    require'lspconfig'.ccls.setup{on_attach = on_attach}
+    require'lspconfig'.rust_analyzer.setup{on_attach=require'completion'.on_attach}
 END
 
 " Deoplete
